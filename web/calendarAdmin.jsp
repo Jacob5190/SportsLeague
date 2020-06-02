@@ -44,8 +44,19 @@
             var iDate = $("#inputDate").val();
             var iEvent = $("#inputEvent").val();
             $.ajax({
-                url:
-            })
+                url: "/eventUpload",
+                type: "post",
+                data: {
+                    "iDate": iDate,
+                    "iEvent": iEvent
+                },
+                success: function () {
+                    alert("Event uploaded successfully.");
+                },
+                error: function (err) {
+                    console.log(err);
+                }
+            });
         }
     </script>
 </body>
