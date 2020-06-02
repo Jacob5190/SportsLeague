@@ -16,9 +16,10 @@ public class calendarController{
 	public ModelAndView handleRequest (javax.servlet.http.HttpServletRequest httpServletRequest, javax.servlet.http.HttpServletResponse httpServletResponse) throws Exception {
 		return new ModelAndView("calendar.jsp");
 	}
+
 	@RequestMapping("/eventUpload")
 	@ResponseBody
-	public void eventUpload (@RequestParam("date") String iDate, @RequestParam("Event") String iEvent) throws ParseException {
+	public void eventUpload (@RequestParam("iDate") String iDate, @RequestParam("iEvent") String iEvent) throws ParseException {
 		Date date = new SimpleDateFormat("yyyy-MM-dd").parse(iDate);
 
 	}

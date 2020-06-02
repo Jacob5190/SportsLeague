@@ -1,7 +1,7 @@
 <component name="libraryTable">
   <library name="jquery-3.5.1.min" type="kotlin.js">
     <CLASSES>
-      <root url="file://$PROJECT_DIR$/../../jquery-3.5.1.min.js" />
+      <root url="file://$PROJECT_DIR$/lib/jquery-3.5.1.min.js" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
